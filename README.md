@@ -1,6 +1,7 @@
 # PolicyInfo-WebApp
 ![Issues](https://img.shields.io/github/issues/saviokay/PolicyInfo-WebApp.svg?style=popout)
 ![Forks](https://img.shields.io/github/forks/saviokay/PolicyInfo-WebApp.svg?style=popout)
+![License](https://img.shields.io/github/license/saviokay/PolicyInfo-WebApp.svg?logo=MIT&style=popout)
 
 
 The PHP Project revolves around retrieving policy holder and vehicle information through Phone or Policy Number.
