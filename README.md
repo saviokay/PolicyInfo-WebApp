@@ -72,7 +72,7 @@ The Policy Information Is Retrieved Through Policy Holder's Policy Number.
 * DB Referenced : **`OPS$OPUS.VW_NS_POLICY_INFO`** & **`OPS$OPUS.VW_NS_POLICY_VEH_INFO`**.
 
 ```php
-[username@webapps7-dev policy]$ php main2.php JF80331
+[username@webapps7-dev policy]$ php policy.php JF80331
 Information For Policy#ID: JF80331
 
 [
