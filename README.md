@@ -25,45 +25,6 @@ The rest-api application depends on these other gems for usage at runtime:
 
 ## Usage
 
-
-### Via Phone Number 
-
-The Policy Information Is Retrieved Through Policy Holder's Phone Number.
-* Phone Number Is Passed As A PHP Argument During Code Execution. **`'$phone = $argv[1]'`**.
-* DB Referenced : **`DBM$DB.VW_POLICY_INFO`** & **`DBM$DB.VW_POLICY_VH_INFO`**.
-```php
-[username@webapps7-dev phone]$ php phone.php 4435291059
-Information For Policy#ID With Phone Number: 4435291059
-[
-    {
-         "POLICYNUMBER": "JF80619",
-         "EFFECTIVEDATE": "08\/06\/2015",
-         "EXPIRATIONDATE": "08\/06\/2016",
-         "PRODUCERCODE": "315995",
-         "PRODUCT": "B1H",
-         "PLANCODE": "515",
-         "FIRSTNAME": "SAMUEL",
-         "LASTNAME": "JOHNSON",
-         "ADDRESS": "2400 E FORT AVE",
-         "CITY": "BALTIMORE",
-         "STATE": "MD",
-         "ZIP": "21230-4956",
-         "PHONE": "4435291059",
-         "EMAIL": s.johnson@gmail.com,
-         "POLICY_ID": "JF80619"
-    }
-]
-[
-    {
-         "YEAR": "2005",
-         "MAKE": "HYUN",
-         "MODEL": "ACCENT",
-         "VIN": "KMHCG35C15U1059533",
-         "POLICY_ID": "JF80619"
-    }
-]
-```
-
 ### Via Policy Number 
 
 The Policy Information Is Retrieved Through Policy Holder's Policy Number.
@@ -104,6 +65,46 @@ Information For Policy#ID: JF80619
     }
 ]
 ```
+
+
+### Via Phone Number 
+
+The Policy Information Is Retrieved Through Policy Holder's Phone Number.
+* Phone Number Is Passed As A PHP Argument During Code Execution. **`'$phone = $argv[1]'`**.
+* DB Referenced : **`DBM$DB.VW_POLICY_INFO`** & **`DBM$DB.VW_POLICY_VH_INFO`**.
+```php
+[username@webapps7-dev phone]$ php phone.php 4435291059
+Information For Policy#ID With Phone Number: 4435291059
+[
+    {
+         "POLICYNUMBER": "JF80619",
+         "EFFECTIVEDATE": "08\/06\/2015",
+         "EXPIRATIONDATE": "08\/06\/2016",
+         "PRODUCERCODE": "315995",
+         "PRODUCT": "B1H",
+         "PLANCODE": "515",
+         "FIRSTNAME": "SAMUEL",
+         "LASTNAME": "JOHNSON",
+         "ADDRESS": "2400 E FORT AVE",
+         "CITY": "BALTIMORE",
+         "STATE": "MD",
+         "ZIP": "21230-4956",
+         "PHONE": "4435291059",
+         "EMAIL": s.johnson@gmail.com,
+         "POLICY_ID": "JF80619"
+    }
+]
+[
+    {
+         "YEAR": "2005",
+         "MAKE": "HYUN",
+         "MODEL": "ACCENT",
+         "VIN": "KMHCG35C15U1059533",
+         "POLICY_ID": "JF80619"
+    }
+]
+```
+
 ## Legal
 
 Released under the MIT License: https://opensource.org/licenses/MIT
