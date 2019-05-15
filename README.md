@@ -30,27 +30,27 @@ The rest-api application depends on these other gems for usage at runtime:
 
 The Policy Information Is Retrieved Through Policy Holder's Phone Number.
 * Phone Number Is Passed As A PHP Argument During Code Execution. **`'$phone = $argv[1]'`**.
-* DB Referenced : **`OPS$OPUS.VW_NS_POLICY_INFO`** & **`OPS$OPUS.VW_NS_POLICY_VEH_INFO`**.
+* DB Referenced : **`DBM$DB.VW_POLICY_INFO`** & **`DBM$DB.VW_POLICY_VH_INFO`**.
 ```php
-[username@webapps7-dev phone]$ php phone.php 4435292128
-Information For Policy#ID With Phone Number: 4435292128
+[username@webapps7-dev phone]$ php phone.php 4435291059
+Information For Policy#ID With Phone Number: 4435291059
 [
     {
-         "POLICYNUMBER": "JF80331",
-         "EFFECTIVEDATE": "06\/27\/2018",
-         "EXPIRATIONDATE": "06\/27\/2019",
-         "PRODUCERCODE": "11977",
-         "PRODUCT": "131",
-         "PLANCODE": "B1",
-         "FIRSTNAME": "SIERRA",
-         "LASTNAME": "DARGAN",
-         "ADDRESS": "6718 QUIET HOURS",
-         "CITY": "COLUMBIA",
+         "POLICYNUMBER": "JF80619",
+         "EFFECTIVEDATE": "08\/06\/2015",
+         "EXPIRATIONDATE": "08\/06\/2016",
+         "PRODUCERCODE": "315995",
+         "PRODUCT": "B1H",
+         "PLANCODE": "515",
+         "FIRSTNAME": "SAMUEL",
+         "LASTNAME": "JOHNSON",
+         "ADDRESS": "2400 E FORT AVE",
+         "CITY": "BALTIMORE",
          "STATE": "MD",
-         "ZIP": "21045-4956",
-         "PHONE": "4435292128",
-         "EMAIL": null,
-         "POLICY_ID": "JF80331"
+         "ZIP": "21230-4956",
+         "PHONE": "4435291059",
+         "EMAIL": s.johnson@gmail.com,
+         "POLICY_ID": "JF80619"
     }
 ]
 [
@@ -58,8 +58,8 @@ Information For Policy#ID With Phone Number: 4435292128
          "YEAR": "2005",
          "MAKE": "HYUN",
          "MODEL": "ACCENT",
-         "VIN": "KMHCG35C15U338533",
-         "POLICY_ID": "JF80331"
+         "VIN": "KMHCG35C15U1059533",
+         "POLICY_ID": "JF80619"
     }
 ]
 ```
@@ -69,29 +69,29 @@ Information For Policy#ID With Phone Number: 4435292128
 The Policy Information Is Retrieved Through Policy Holder's Policy Number.
 
 * Policy Number Is Passed As A PHP Argument During Code Execution. **`'$id = $argv[1]'`**.
-* DB Referenced : **`OPS$OPUS.VW_NS_POLICY_INFO`** & **`OPS$OPUS.VW_NS_POLICY_VEH_INFO`**.
+* DB Referenced : **`DBM$DB.VW_POLICY_INFO`** & **`DBM$DB.VW_POLICY_VH_INFO`**.
 
 ```php
-[username@webapps7-dev policy]$ php policy.php JF80331
-Information For Policy#ID: JF80331
+[username@webapps7-dev policy]$ php policy.php JF80619
+Information For Policy#ID: JF80619
 
 [
     {
         "POLICYNUMBER": "JF80331",
-        "EFFECTIVEDATE": "06\/27\/2018",
-        "EXPIRATIONDATE": "06\/27\/2019",
-        "PRODUCERCODE": "11977",
-        "PRODUCT": "131",
-        "PLANCODE": "B1",
-        "FIRSTNAME": "SIERRA",
-        "LASTNAME": "DARGAN",
-        "ADDRESS": "6718 QUIET HOURS",
-        "CITY": "COLUMBIA",
+        "EFFECTIVEDATE": "08\/06\/2015",
+        "EXPIRATIONDATE": "08\/06\/2016",
+        "PRODUCERCODE": "315995",
+        "PRODUCT": "B1H",
+        "PLANCODE": "515",
+        "FIRSTNAME": "SAMUEL",
+        "LASTNAME": "JOHNSON",
+        "ADDRESS": "2400 E FORT AVE",
+        "CITY": "BALTIMORE",
         "STATE": "MD",
-        "ZIP": "21045-4956",
-        "PHONE": "4435292128",
-        "EMAIL": null,
-        "POLICY_ID": "JF80331"
+        "ZIP": "21230-4956",
+        "PHONE": "4435291059",
+        "EMAIL": s.johnson@gmail.com,
+        "POLICY_ID": "JF80619"
     }
 ]
 [
@@ -99,8 +99,8 @@ Information For Policy#ID: JF80331
         "YEAR": "2005",
         "MAKE": "HYUN",
         "MODEL": "ACCENT",
-        "VIN": "KMHCG35C15U338533",
-        "POLICY_ID": "JF80331"
+        "VIN": "KMHCG35C15U1059533",
+        "POLICY_ID": "JF80619"
     }
 ]
 ```
